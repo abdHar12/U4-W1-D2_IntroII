@@ -9,8 +9,26 @@ public class Main {
         do{
             System.out.printf("\nInserisci la tua stringa: ");
             str = sc.nextLine();
-            System.out.printf(str);
+
             if(str.equals(":q")) sc.close();
+            else{
+                str=inserisciVirgole(str);
+                System.out.println(str);
+            }
         }while (!(str.equals(":q")));
+    }
+
+    public static String inserisciVirgole(String input) {
+        StringBuilder risultato = new StringBuilder();
+
+        for (int i = 0; i < input.length(); i++) {
+            risultato.append(input.charAt(i));
+
+            if (i < input.length() - 1) {
+                risultato.append(",");
+            }
+        }
+
+        return risultato.toString();
     }
 }

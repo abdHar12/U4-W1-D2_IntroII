@@ -4,10 +4,10 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.printf("Inserisci il numero: ");
         int num = sc.nextInt();
-        for(int i=num;i>=0;i--){
+        for (int i = num; i >= 0; i--) {
             System.out.println(i);
         }
     }
